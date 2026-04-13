@@ -40,7 +40,7 @@
             </ul>
           </nav>
         </div>
-        <address>
+        <address class="contact-links">
           <ul class="email-phone">
             <li>
               <a class="contacts link" href="mailto:info@devstudio.com"
@@ -54,6 +54,11 @@
             </li>
           </ul>
         </address>
+        <button class="mobile-menu" data-mobile-menu-open>
+          <svg class="icon" width="24" height="24">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -513,7 +518,7 @@
             placeholder="Text input"
             required
           ></textarea>
-          <label class="modal-label checkbox">
+          <label class="checkbox">
             <input
               type="checkbox"
               name="accept"
@@ -524,12 +529,83 @@
             <span class="custom-checkbox">
               <svg class="check-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-tick"></use>
-              </svg> </span
-            >I accept the terms and conditions of the
-            <a href="/" class="privacy-policy"> Privacy Policy</a>
+              </svg>
+            </span>
+
+            <span class="checkbox-text">
+              I accept the terms and conditions of the
+              <a href="/" class="privacy-policy">Privacy Policy</a>
+            </span>
           </label>
           <button class="send-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <div class="mobile-menu-overlay" data-mobile-menu>
+      <button class="close-btn" type="button" data-mobile-menu-close>
+        <svg class="icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-nav">
+          <li>
+            <a class="mobile-nav-option current" href="/">Studio</a>
+          </li>
+          <li>
+            <a class="mobile-nav-option" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="mobile-nav-option" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-links">
+        <address class="mobile-contact-links">
+          <ul class="mobile-email-phone">
+            <li>
+              <a class="mobile-contacts" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mobile-contacts" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="soc-links">
+          <li>
+            <a class="soc-link" href="/">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="soc-link" href="/">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="soc-link" href="/">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="soc-link" href="/">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
 
