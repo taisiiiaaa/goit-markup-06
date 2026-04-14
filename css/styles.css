@@ -34,6 +34,8 @@ p {
 
 img {
   display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 a {
@@ -48,7 +50,8 @@ ul {
 }
 
 .container {
-  max-width: 1158px;
+  /* max-width: 1158px; */
+  max-width: 320px;
 
   /* padding: 0 15px; */
   padding: 0 16px;
@@ -206,12 +209,20 @@ address {
   padding: 72px 0;
 
   background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7)), url('../images/hero-banner.jpg');
+    linear-gradient(rgba(46, 47, 66, 0.7)), url('../images/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  max-width: 320px;
   margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero-sec {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7)), url('../images/hero-bg@2x.jpg');
+  }
 }
 
 .main-heading {
@@ -335,6 +346,11 @@ address {
   background-color: #f4f4fd;
 }
 
+/* MOBILE */
+.team .container {
+  padding: 0 28px;
+}
+
 .our-members {
   display: flex;
   gap: 24px;
@@ -354,6 +370,7 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
 .our-members .body-text {
   font-weight: 400;
 }
@@ -408,7 +425,6 @@ address {
   border-bottom-right-radius: 4px;
 
   /* MOBILE */
-  max-width: 264px;
   margin: 0 auto;
 }
 
@@ -958,6 +974,10 @@ address {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.mobile-email-phone li:first-child a {
+  color: #4d5ae5;
 }
 
 .mobile-contacts {
