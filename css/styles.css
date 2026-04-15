@@ -325,6 +325,7 @@ address {
   justify-content: center;
   flex-direction: column;
   row-gap: 72px;
+  flex-wrap: wrap;
 }
 
 .our-members .sub-subheading,
@@ -986,7 +987,6 @@ address {
     flex-basis: calc((100% - 24px) / 2);
   }
   .our-members {
-    flex-wrap: wrap;
     gap: 64px 24px;
     justify-content: center;
     flex-direction: row;
@@ -1065,9 +1065,6 @@ address {
       linear-gradient(rgba(46, 47, 66, 0.7)),
       url('../images/hero-bg-desktop.jpg');
   }
-  .page-header {
-    padding-block: 0;
-  }
   .main-heading {
     margin-bottom: 48px;
   }
@@ -1100,7 +1097,7 @@ address {
     flex-basis: calc((100% - 24px * 2) / 3);
   }
   .page-footer {
-    padding: 100px 15px;
+    padding-block: 100px;
   }
   .page-footer .container {
     padding: 0 15px;
