@@ -195,7 +195,6 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -965,7 +964,6 @@ address {
 
   .hero-sec {
     padding: 112px 0;
-    max-width: 768px;
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7)),
       url('../images/hero-bg-tablet.jpg');
