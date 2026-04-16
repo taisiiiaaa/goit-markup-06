@@ -900,11 +900,11 @@ address {
 
 .mobile-email-phone {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 24px;
 }
 
-.mobile-email-phone li:first-child a {
+.mobile-email-phone li:last-child a {
   color: #4d5ae5;
 }
 
