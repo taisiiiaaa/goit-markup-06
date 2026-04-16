@@ -411,19 +411,16 @@ address {
 .case {
   flex-basis: calc(100% / 3);
   background-color: #fff;
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .case-wrapper {
   position: relative;
   overflow: hidden;
-}
-
-.case:hover {
-  box-shadow:
-    0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .overlay {
@@ -622,10 +619,8 @@ address {
   position: relative;
   border-radius: 4px;
   width: 100%;
-  max-width: 408px;
-  max-height: 584px;
   background-color: #fcfcfc;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -857,9 +852,6 @@ address {
   padding: 72px 16px 40px 16px;
   background-color: #fff;
 
-  display: flex;
-  flex-direction: column;
-
   visibility: hidden;
   pointer-events: none;
   z-index: 999;
@@ -877,6 +869,13 @@ address {
   transition:
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 0s;
+}
+
+.mobile-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .mobile-nav {
@@ -962,6 +961,9 @@ address {
   .mobile-menu {
     display: none;
   }
+  .mobile-menu-overlay {
+    display: none;
+  }
 
   .hero-sec {
     padding: 112px 0;
@@ -1027,8 +1029,18 @@ address {
     text-align: left;
   }
   .modal {
+    padding: 72px 24px 24px 24px;
     max-width: 408px;
     max-height: 584px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .navigation {
+    gap: 120px;
+  }
+  .our-members {
+    padding-inline: 92px;
   }
 }
 
@@ -1095,6 +1107,13 @@ address {
   }
   .case {
     flex-basis: calc((100% - 24px * 2) / 3);
+    box-shadow: none;
+    &:hover {
+      box-shadow:
+        0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    }
   }
   .page-footer {
     padding-block: 100px;
