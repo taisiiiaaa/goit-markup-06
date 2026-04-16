@@ -939,6 +939,10 @@ address {
   .nav {
     display: flex;
   }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
   .contact-links {
     display: block;
   }
@@ -1052,9 +1056,7 @@ address {
     padding: 0 15px;
   }
   .navigation {
-    display: flex;
     gap: 76px;
-    align-items: center;
   }
   .section {
     padding: 120px 0;
